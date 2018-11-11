@@ -28,7 +28,7 @@ export default class Verify extends React.Component {
     }
     
     checkForAuth() {
-        fetch(`http://dbe559e8.ngrok.io/api/verify/${window.location.hash.slice(1)}`)
+        fetch(`https://dbe559e8.ngrok.io/api/verify/${window.location.hash.slice(1)}`)
             .then(d => d.json())
             .then(data => {
                 console.log(data);
